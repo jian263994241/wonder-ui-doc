@@ -11,6 +11,9 @@ export default {
   // dynamicImport: {
   //   loading: '@/Loading',
   // }, 
+  resolve: {
+    includes: [ 'docs', 'src' ]
+  },
   menus: {
     '/guide': [{
       title: '入门教程',
@@ -84,5 +87,6 @@ export default {
         style: 'css',
       },
     ],
+    'react-docgen'
   ],
 };

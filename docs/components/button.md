@@ -131,12 +131,13 @@ export default () => {
 
 ## Props
 
-```jsx
+```jsx | inline
 import React from 'react';
-import * as docgen from 'react-docgen';
-import code from 'raw-loader!../../src/Button';
+import DocTable from '../../src/DocTable';
+// import code from 'raw-loader!@wonder-ui/core/es/components/Button/Button.js';
+import docgen from '../../src/docgen';
 
-// console.log(docgen.parse(code))
+docgen('@wonder-ui/core/es/components/Button/Button.js')
 
-export default () => <div>123</div>
+// export default () => <DocTable code={code}/>;
 ```
